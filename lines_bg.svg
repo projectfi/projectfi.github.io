@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="594px" height="444px" viewBox="0 0 594 444" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="594" height="444"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="594" height="444" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="594" height="444" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-781.000000, -2274.000000)">
+            <g id="lines" transform="translate(1078.000000, 2496.000000) scale(-1, 1) translate(-1078.000000, -2496.000000) translate(781.000000, 2274.000000)">
+                <g id="Group-44">
+                    <g id="bg">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask" stroke-opacity="0.0109544837" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2">
+                            <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                        </g>
+                        <g mask="url(#mask-3)" fill="#D0DBDC">
+                            <g transform="translate(-85.000000, 109.000000)">
+                                <path d="M191.317,138.664 L191.317,401 C191.317,401.552 191.764,402 192.317,402 C192.869,402 193.317,401.552 193.317,401 L193.317,138.664 C193.317,138.112 192.869,137.664 192.317,137.664 C191.764,137.664 191.317,138.112 191.317,138.664" id="Fill-6"></path>
+                                <path d="M128.878,157.131 L128.878,393 C128.878,393.552 129.325,394 129.878,394 C130.43,394 130.878,393.552 130.878,393 L130.878,157.131 C130.878,156.579 130.43,156.131 129.878,156.131 C129.325,156.131 128.878,156.579 128.878,157.131" id="Fill-8"></path>
+                                <path d="M601.951,231 L601.951,393 C601.951,393.552 602.398,394 602.951,394 C603.503,394 603.951,393.552 603.951,393 L603.951,231 C603.951,230.448 603.503,230 602.951,230 C602.398,230 601.951,230.448 601.951,231" id="Fill-19"></path>
+                                <path d="M664.39,279.847 L664.39,433 C664.39,433.552 664.837,434 665.39,434 C665.942,434 666.39,433.552 666.39,433 L666.39,279.847 C666.39,279.295 665.942,278.847 665.39,278.847 C664.837,278.847 664.39,279.295 664.39,279.847" id="Fill-23"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

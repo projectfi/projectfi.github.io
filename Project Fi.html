@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html ng-app="fi-app" class="ng-scope gr__fi_google_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- Shady DOM styles for custom-style --><!-- Shady DOM styles for dom-template --><!-- Shady DOM styles for dom-repeat --><!-- Shady DOM styles for array-selector --><!-- Shady DOM styles for dom-if --><!-- Shady DOM styles for iron-collapse --><!-- Shady DOM styles for iron-meta --><!-- Shady DOM styles for iron-meta-query --><!-- Shady DOM styles for iron-icon --><style scope="iron-icon-1">.iron-icon-1 {
+  display: -ms-inline-flexbox;
+      display: -webkit-inline-flex;
+      display: inline-flex;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+        position: relative;
+
+        vertical-align: middle;
+
+        fill: currentcolor;
+        stroke: none;
+
+        width: 24px;
+        height: 24px;;
+}</style><style scope="iron-icon-0">.iron-icon-0 {
+  display: -ms-inline-flexbox;
+      display: -webkit-inline-flex;
+      display: inline-flex;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+        position: relative;
+
+        vertical-align: middle;
+
+        fill: currentcolor;
+        stroke: none;
+
+        width: 100%;
+        height: 100%;;
+}</style><!-- Shady DOM styles for iron-iconset-svg --><!-- Shady DOM styles for paper-listbox --><style scope="paper-listbox-0">.paper-listbox-0 {
+  display: block;
+        padding: 8px 0;
+
+        background: #ffffff;
+        color: #212121;;
+}</style><!-- Shady DOM styles for paper-menu --><!-- Shady DOM styles for paper-ripple --><style scope="paper-ripple">paper-ripple {
+  display: block;
+        position: absolute;
+        border-radius: inherit;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+
+        pointer-events: none;
+}
+
+paper-ripple[animating] {
+  -webkit-transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
+}
+
+#background.paper-ripple,#waves.paper-ripple,.wave-container.paper-ripple,.wave.paper-ripple {
+  pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+
+#background.paper-ripple,.wave.paper-ripple {
+  opacity: 0;
+}
+
+#waves.paper-ripple,.wave.paper-ripple {
+  overflow: hidden;
+}
+
+.wave-container.paper-ripple,.wave.paper-ripple {
+  border-radius: 50%;
+}
+
+paper-ripple.circle #background.paper-ripple,paper-ripple.circle #waves.paper-ripple {
+  border-radius: 50%;
+}
+
+paper-ripple.circle .wave-container.paper-ripple {
+  overflow: hidden;
+}</style><!-- Shady DOM styles for paper-icon-button --><style scope="paper-icon-button-1">.paper-icon-button-1 {
+  display: inline-block;
+        position: relative;
+        padding: 8px;
+        outline: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
+        line-height: 1;
+
+        width: 40px;
+        height: 40px;
+
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+
+
+        box-sizing: border-box !important;;
+}
+
+.paper-icon-button-1 #ink.paper-icon-button {
+  color: #0f9d58;
+        opacity: 0.6;
+}
+
+.paper-icon-button-1[disabled] {
+  color: #9b9b9b;
+        pointer-events: none;
+        cursor: auto;;
+}
+
+.paper-icon-button-1:hover {
+  ;
+}
+
+.paper-icon-button-1 iron-icon.paper-icon-button {
+  ;
+}</style><style scope="paper-icon-button-0">.paper-icon-button-0 {
+  display: inline-block;
+        position: relative;
+        padding: 8px;
+        outline: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
+        line-height: 1;
+
+        width: 40px;
+        height: 40px;
+
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+
+
+        box-sizing: border-box !important;;
+}
+
+.paper-icon-button-0 #ink.paper-icon-button {
+  color: #212121;
+        opacity: 0.6;
+}
+
+.paper-icon-button-0[disabled] {
+  color: #9b9b9b;
+        pointer-events: none;
+        cursor: auto;;
+}
+
+.paper-icon-button-0:hover {
+  ;
+}
+
+.paper-icon-button-0 iron-icon.paper-icon-button {
+  ;
+}</style><!-- Shady DOM styles for iron-media-query --><!-- Shady DOM styles for iron-selector --><!-- Shady DOM styles for paper-toolbar --><style scope="paper-toolbar-0">.paper-toolbar-0 {
+  ;
+
+
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+
+
+        height: 71px;
+
+        background: white;
+        color: #ffffff;;
+}
+
+.paper-toolbar-0.animate {
+  transition: height 0.18s ease-in;
+}
+
+.paper-toolbar-0.medium-tall {
+  height: calc(71px * 2);;
+}
+
+.paper-toolbar-0.tall {
+  height: calc(71px * 3);;
+}
+
+.paper-toolbar-0 .toolbar-tools.paper-toolbar {
+  position: relative;
+        height: 71px;
+        padding: 0 16px;
+        pointer-events: none;display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;;
+}
+
+@media (max-width: 600px) {
+.paper-toolbar-0 {
+  height: 71px;
+}
+
+.paper-toolbar-0.medium-tall {
+  height: calc(71px * 2);
+}
+
+.paper-toolbar-0.tall {
+  height: calc(71px * 3);
+}
+
+.paper-toolbar-0 .toolbar-tools.paper-toolbar {
+  height: 71px;
+}
+
+}
+
+.paper-toolbar-0 #topBar.paper-toolbar {
+  position: relative;
+}
+
+.paper-toolbar-0 #middleBar.paper-toolbar {
+  position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+}
+
+.paper-toolbar-0.tall #middleBar.paper-toolbar,.paper-toolbar-0.medium-tall #middleBar.paper-toolbar {
+  -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+}
+
+.paper-toolbar-0 #bottomBar.paper-toolbar {
+  position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+}
+
+.paper-toolbar-0 .toolbar-tools.paper-toolbar  > *:not([disabled]) {
+  pointer-events: auto;
+}
+
+.paper-toolbar-0 .toolbar-tools.paper-toolbar  .title {
+  font-family: 'Roboto', 'Noto', sans-serif;
+      -webkit-font-smoothing: antialiased;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        pointer-events: none;-ms-flex: 1 1 0.000000001px;
+      -webkit-flex: 1;
+      flex: 1;
+      -webkit-flex-basis: 0.000000001px;
+      flex-basis: 0.000000001px;
+}
+
+.paper-toolbar-0 .toolbar-tools.paper-toolbar  > .title {
+  margin-left: 56px;
+}
+
+.paper-toolbar-0 .toolbar-tools.paper-toolbar  > paper-icon-button + .title {
+  margin-left: 0;
+}
+
+.paper-toolbar-0 .toolbar-tools.paper-toolbar  .title {
+  ;
+}
+
+.paper-toolbar-0 .toolbar-tools.paper-toolbar  paper-icon-button[icon=menu] {
+  margin-right: 24px;
+}
+
+.paper-toolbar-0 .toolbar-tools.paper-toolbar  > .fit {
+  position: absolute;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        margin: 0;
+}
+
+.paper-toolbar-0 .start-justified.paper-toolbar {
+  -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+}
+
+.paper-toolbar-0 .center-justified.paper-toolbar {
+  -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+}
+
+.paper-toolbar-0 .end-justified.paper-toolbar {
+  -ms-flex-pack: end;
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+}
+
+.paper-toolbar-0 .around-justified.paper-toolbar {
+  -ms-flex-pack: distribute;
+      -webkit-justify-content: space-around;
+      justify-content: space-around;
+}
+
+.paper-toolbar-0 .justified.paper-toolbar {
+  -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+}</style><!-- Shady DOM styles for paper-button --><style scope="paper-button-1">.paper-button-1 {
+  display: block;
+        position: relative;
+}
+
+.paper-button-1[elevation="1"] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                  0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.paper-button-1[elevation="2"] {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 10px 0 rgba(0, 0, 0, 0.12),
+                  0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button-1[elevation="3"] {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                  0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button-1[elevation="4"] {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                  0 3px 14px 2px rgba(0, 0, 0, 0.12),
+                  0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button-1[elevation="5"] {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+                  0  6px 30px 5px rgba(0, 0, 0, 0.12),
+                  0  8px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button-1 {
+  display: -ms-inline-flexbox;
+      display: -webkit-inline-flex;
+      display: inline-flex;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        min-width: 5.14em;
+        margin: 0 0.29em;
+        background: transparent;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+        font: inherit;
+        text-transform: uppercase;
+        outline-width: 0;
+        border-radius: 3px;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
+        padding: 0.7em 0.57em;font-family: 'Roboto', 'Noto', sans-serif;
+      -webkit-font-smoothing: antialiased;font-weight: 300;
+}
+
+.paper-button-1[hidden] {
+  display: none !important;
+}
+
+.paper-button-1[raised].keyboard-focus {
+  font-weight: bold;font-weight: 300;
+}
+
+.paper-button-1:not([raised]).keyboard-focus {
+  font-weight: bold;font-weight: 300;
+}
+
+.paper-button-1[disabled] {
+  background: #eaeaea;
+        color: #a8a8a8;
+        cursor: auto;
+        pointer-events: none;;
+}
+
+.paper-button-1[animated] {
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.paper-button-1 paper-ripple.paper-button {
+  color:;
+}</style><style scope="paper-button-0">.paper-button-0 {
+  display: block;
+        position: relative;
+}
+
+.paper-button-0[elevation="1"] {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                  0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.paper-button-0[elevation="2"] {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 10px 0 rgba(0, 0, 0, 0.12),
+                  0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button-0[elevation="3"] {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                  0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button-0[elevation="4"] {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                  0 3px 14px 2px rgba(0, 0, 0, 0.12),
+                  0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button-0[elevation="5"] {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+                  0  6px 30px 5px rgba(0, 0, 0, 0.12),
+                  0  8px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button-0 {
+  display: -ms-inline-flexbox;
+      display: -webkit-inline-flex;
+      display: inline-flex;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        min-width: 5.14em;
+        margin: 0 0.29em;
+        background: transparent;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+        font: inherit;
+        text-transform: uppercase;
+        outline-width: 0;
+        border-radius: 3px;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
+        padding: 0.7em 0.57em;font-family: 'Roboto', 'Noto', sans-serif;
+      -webkit-font-smoothing: antialiased;;
+}
+
+.paper-button-0[hidden] {
+  display: none !important;
+}
+
+.paper-button-0[raised].keyboard-focus {
+  font-weight: bold;;
+}
+
+.paper-button-0:not([raised]).keyboard-focus {
+  font-weight: bold;;
+}
+
+.paper-button-0[disabled] {
+  background: #eaeaea;
+        color: #a8a8a8;
+        cursor: auto;
+        pointer-events: none;;
+}
+
+.paper-button-0[animated] {
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.paper-button-0 paper-ripple.paper-button {
+  color:;
+}</style><!-- Shady DOM styles for paper-fab --><!-- Shady DOM styles for iron-a11y-announcer --><style scope="iron-a11y-announcer">iron-a11y-announcer {
+  display: inline-block;
+        position: fixed;
+        clip: rect(0px,0px,0px,0px);
+}</style><!-- Shady DOM styles for iron-input --><!-- Shady DOM styles for paper-input-char-counter --><!-- Shady DOM styles for paper-input-container --><!-- Shady DOM styles for paper-input-error --><!-- Shady DOM styles for paper-input --><!-- Shady DOM styles for paper-item --><style scope="paper-item-0">.paper-item-0,.paper-item-0 .paper-item.paper-item {
+  display: block;
+        position: relative;
+        min-height: 48px;
+        padding: 0px 16px;
+}
+
+.paper-item-0 .paper-item.paper-item {
+  font-family: 'Roboto', 'Noto', sans-serif;
+      -webkit-font-smoothing: antialiased;
+
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+        border:none;
+        outline: none;
+        background: white;
+        width: 100%;
+        text-align: left;
+}
+
+.paper-item-0[hidden],.paper-item-0 .paper-item[hidden].paper-item {
+  display: none !important;
+}
+
+.paper-item-0.iron-selected,.paper-item-0 .paper-item.iron-selected.paper-item {
+  font-weight: bold;background-color: white;
+}
+
+.paper-item-0[disabled],.paper-item-0 .paper-item[disabled].paper-item {
+  color: #9b9b9b;;
+}
+
+.paper-item-0:focus,.paper-item-0 .paper-item.paper-item:focus {
+  position: relative;
+        outline: 0;background-color: white;
+}
+
+.paper-item-0:focus:before,.paper-item-0 .paper-item.paper-item:focus:before {
+  position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+        background: currentColor;
+        content: '';
+        opacity: 0.12;
+        pointer-events: none;;
+}
+
+.paper-item-0 {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;font-family: 'Roboto', 'Noto', sans-serif;
+      -webkit-font-smoothing: antialiased;
+
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;;
+}</style><!-- Shady DOM styles for paper-progress --><!-- Shady DOM styles for paper-slider --><!-- Shady DOM styles for paper-tab --><style scope="paper-tab-0">.paper-tab-0 {
+  display: -ms-inline-flexbox;
+      display: -webkit-inline-flex;
+      display: inline-flex;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;-ms-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+
+        position: relative;
+        padding: 0 12px;
+        overflow: hidden;
+        cursor: pointer;
+        vertical-align: middle;font-family: 'Roboto', 'Noto', sans-serif;
+      -webkit-font-smoothing: antialiased;;
+}
+
+.paper-tab-0:focus {
+  outline: none;
+}
+
+.paper-tab-0[link] {
+  padding: 0;
+}
+
+.paper-tab-0 .tab-content.paper-tab {
+  height: 100%;
+        transform: translateZ(0);
+          -webkit-transform: translateZ(0);
+        transition: opacity 0.1s cubic-bezier(0.4, 0.0, 1, 1);display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;-ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;-ms-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;height: auto;
+            opacity: 1;
+}
+
+.paper-tab-0:not(.iron-selected) > .tab-content.paper-tab {
+  opacity: 0.8;opacity: 1;
+}
+
+.paper-tab-0:focus .tab-content.paper-tab {
+  opacity: 1;
+        font-weight: 700;
+}
+
+.paper-tab-0 paper-ripple.paper-tab {
+  color: #0f9d58;
+}
+
+.paper-tab-0 .tab-content.paper-tab  > a {
+  -ms-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+
+        height: 100%;
+}</style><!-- Shady DOM styles for paper-tabs --><style scope="paper-tabs-0">.paper-tabs-0 {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+        height: 48px;
+        font-size: 14px;
+        font-weight: 500;
+        overflow: hidden;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;height: auto;
+}
+
+[dir=rtl] .paper-tabs-0, .paper-tabs-0[dir=rtl] {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+
+.paper-tabs-0 #tabsContainer.paper-tabs {
+  position: relative;
+        height: 100%;
+        white-space: nowrap;
+        overflow: hidden;-ms-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;;
+}
+
+.paper-tabs-0 #tabsContent.paper-tabs {
+  height: 100%;
+        -moz-flex-basis: auto;
+        -ms-flex-basis: auto;
+        flex-basis: auto;;
+}
+
+.paper-tabs-0 #tabsContent.scrollable.paper-tabs {
+  position: absolute;
+        white-space: nowrap;
+}
+
+.paper-tabs-0 #tabsContent.paper-tabs:not(.scrollable),.paper-tabs-0 #tabsContent.scrollable.fit-container.paper-tabs {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+}
+
+.paper-tabs-0 #tabsContent.scrollable.fit-container.paper-tabs {
+  min-width: 100%;
+}
+
+.paper-tabs-0 #tabsContent.scrollable.fit-container.paper-tabs  > * {
+  -ms-flex: 1 0 auto;
+        -webkit-flex: 1 0 auto;
+        flex: 1 0 auto;
+}
+
+.paper-tabs-0 .hidden.paper-tabs {
+  display: none;
+}
+
+.paper-tabs-0 .not-visible.paper-tabs {
+  opacity: 0;
+        cursor: default;
+}
+
+.paper-tabs-0 paper-icon-button.paper-tabs {
+  width: 48px;
+        height: 48px;
+        padding: 12px;
+        margin: 0 4px;
+}
+
+.paper-tabs-0 #selectionBar.paper-tabs {
+  position: absolute;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid #ffff8d;
+          -webkit-transform: scale(0);
+        transform: scale(0);
+          -webkit-transform-origin: left center;
+        transform-origin: left center;
+          transition: -webkit-transform;
+        transition: transform;;
+}
+
+.paper-tabs-0 #selectionBar.align-bottom.paper-tabs {
+  top: 0;
+        bottom: auto;
+}
+
+.paper-tabs-0 #selectionBar.expand.paper-tabs {
+  transition-duration: 0.15s;
+        transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+}
+
+.paper-tabs-0 #selectionBar.contract.paper-tabs {
+  transition-duration: 0.18s;
+        transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.paper-tabs-0 #tabsContent.paper-tabs  > *:not(#selectionBar) {
+  height: 100%;
+}</style><!-- Shady DOM styles for app-drawer --><style scope="app-drawer-0">.app-drawer-0 {
+  position: fixed;
+        top: -120px;
+        right: 0;
+        bottom: -120px;
+        left: 0;
+
+        visibility: hidden;
+
+        transition-property: visibility;
+}
+
+.app-drawer-0[opened] {
+  visibility: visible;
+}
+
+.app-drawer-0[persistent] {
+  width: 83.4%;
+}
+
+.app-drawer-0[persistent][position=left] {
+  right: auto;
+}
+
+.app-drawer-0[persistent][position=right] {
+  left: auto;
+}
+
+.app-drawer-0 #contentContainer.app-drawer {
+  position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 83.4%;
+        padding: 120px 0;
+
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+
+        background-color: #FFF;overflow-y: scroll;
+            max-width: 314px;
+}
+
+.app-drawer-0[position=right] > #contentContainer.app-drawer {
+  right: 0;
+        left: auto;
+
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+}
+
+.app-drawer-0[swipe-open] > #contentContainer.app-drawer::after {
+  position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+
+        visibility: visible;
+
+        width: 20px;
+
+        content: '';
+}
+
+.app-drawer-0[swipe-open][position=right] > #contentContainer.app-drawer::after {
+  right: 100%;
+        left: auto;
+}
+
+.app-drawer-0[opened] > #contentContainer.app-drawer {
+  -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+}
+
+.app-drawer-0 #scrim.app-drawer {
+  position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        transition-property: opacity;
+        -webkit-transform: translateZ(0);
+        transform:  translateZ(0);
+
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.5);
+}
+
+.app-drawer-0[opened] > #scrim.app-drawer {
+  opacity: 1;
+}
+
+.app-drawer-0[opened][persistent] > #scrim.app-drawer {
+  visibility: hidden;
+
+
+        opacity: 0;
+}</style><!-- Shady DOM styles for app-drawer-layout --><!-- Shady DOM styles for app-header --><!-- Shady DOM styles for app-header-layout --><!-- Shady DOM styles for app-scrollpos-control --><!-- Shady DOM styles for app-toolbar --><style scope="app-toolbar-0">.app-toolbar-0 {
+  display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -ms-flex-direction: row;
+      -webkit-flex-direction: row;
+      flex-direction: row;-ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        position: relative;
+        height: 64px;
+        padding: 0 16px;
+        pointer-events: none;
+        font-size: 20px;
+}
+
+.app-toolbar-0  > * {
+  pointer-events: auto;
+}
+
+.app-toolbar-0  > paper-icon-button {
+  font-size: 0;
+}
+
+.app-toolbar-0  > [main-title],.app-toolbar-0  > [condensed-title] {
+  pointer-events: none;-ms-flex: 1 1 0.000000001px;
+      -webkit-flex: 1;
+      flex: 1;
+      -webkit-flex-basis: 0.000000001px;
+      flex-basis: 0.000000001px;
+}
+
+.app-toolbar-0  > [bottom-item] {
+  position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+}
+
+.app-toolbar-0  > [top-item] {
+  position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+}
+
+.app-toolbar-0  > [spacer] {
+  margin-left: 64px;
+}</style><!-- Shady DOM styles for app-box --><style>body {transition: opacity ease-in 0.2s; }
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; }
+</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<meta content="width=device-width,initial-scale=1.0,user-scalable=no" name="viewport">
+<script>
+window.location = "https://g.co/fi/r/5K3843";
+console.log("%cProject Fi - a wireless service from google_logo", "color:#4285F4; font-size:30px; font-family:'Product Sans', Arial, sans-serif;");
+</script>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+<meta property="og:url" content="https://fi.google.com/about/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Project Fi">
+<meta property="og:image" content="https://fi.google.com/about/static/images/fi_logo_sq_1200.png">
+<meta property="og:site_name" content="Project Fi">
+<title>Project Fi</title>
+<style></style><iframe height="0" width="0" src="./Project Fi_files/activityi.html" style="display: none; visibility: hidden;"></iframe><script type="text/javascript" async="" src="./Project Fi_files/analytics.js" style=""></script><script async="" src="./Project Fi_files/gtm.js"></script><script src="./Project Fi_files/angular.min.js"></script>
+<script src="./Project Fi_files/webcomponents.min.js"></script>
+<link href="https://fi.google.com/about/static/components/components.min.html" rel="import">
+<link rel="shortcut icon" href="https://fi.google.com/about/static/images/fi_favicon_128.png">
+<link rel="stylesheet" href="./Project Fi_files/css">
+<link rel="stylesheet" href="./Project Fi_files/main.min.css" shim-shadowdom="">
+<script>
+dataLayer = [{
+  'gtm.whitelist': ['google', 'flc']
+}];
+</script>
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+ })(window,document,'script','dataLayer','GTM-T2P6P2');
+</script>
+<script type="text/javascript" charset="UTF-8" src="./Project Fi_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./Project Fi_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./Project Fi_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./Project Fi_files/AuthenticationService.Authenticate"></script></head><body class="home" data-current-page="home" data-gr-c-s-loaded="true" cz-shortcut-listen="true" style="">
+<div class="drawer-mask hidden mobile-show"></div>
+<header class="fixed scrolled" navigation="" flex="" data-scroll-header="">
+  <div class="wrap">
+    <div class="clearfix mobile-hide">
+      <div class="right alt">
+        <a class="tab" href="https://fi.google.com/account">
+          <paper-button class="plain account gtm-account-header x-scope paper-button-0" role="button" tabindex="0" animated="" aria-disabled="false" elevation="0">Sign in<paper-ripple><div id="background" class="style-scope paper-ripple"></div><div id="waves" class="style-scope paper-ripple"></div></paper-ripple></paper-button>
+        </a>
+        <a class="tab" href="https://fi.google.com/signup">
+          <paper-button class="invite gtm-invite-header x-scope paper-button-0" role="button" tabindex="0" animated="" aria-disabled="false" elevation="0">Join Fi</paper-button>
+        </a>
+      </div>
+      <div class="logo"><a href="https://fi.google.com/about/"><img src="./Project Fi_files/fi_logo.svg"></a></div>
+      <div class="fill">
+
+        <paper-tabs selected="-1" autoselect="" no-bar="" noink="" role="tablist" tabindex="0" class="x-scope paper-tabs-0"><paper-icon-button icon="paper-tabs:chevron-left" tabindex="-1" class="hidden style-scope paper-tabs x-scope paper-icon-button-0" role="button" aria-disabled="false"><iron-icon id="icon" class="style-scope paper-icon-button x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" class="style-scope iron-icon"></path></g></svg></iron-icon></paper-icon-button><div id="tabsContainer" class="style-scope paper-tabs" style="touch-action: pan-y;"><div id="tabsContent" class=" fit-container style-scope paper-tabs"><div id="selectionBar" class="hidden style-scope paper-tabs" style="transform: translateX(0%) scaleX(0);"></div><paper-tab data-name="plan" link="" noink="" role="tab" aria-disabled="false" class="x-scope paper-tab-0" tabindex="-1"><div class="tab-content style-scope paper-tab">
+
+          </div></paper-tab></div></div><paper-icon-button icon="paper-tabs:chevron-right" tabindex="-1" class="hidden style-scope paper-tabs x-scope paper-icon-button-0" role="button" aria-disabled="false"><iron-icon id="icon" class="style-scope paper-icon-button x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" class="style-scope iron-icon"></path></g></svg></iron-icon></paper-icon-button></paper-tabs>
+      </div>
+    </div>
+    <div class="hidden mobile-show">
+      <app-toolbar class="x-scope app-toolbar-0">
+        <paper-icon-button id="burger-menu" icon="menu" class="mobile-menu x-scope paper-icon-button-1" drawer-toggle="" role="button" tabindex="0" aria-disabled="false"><iron-icon id="icon" class="style-scope paper-icon-button x-scope iron-icon-0"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope iron-icon"></path></g></svg></iron-icon></paper-icon-button>
+        <div main-title="" class="logo"><a href="https://fi.google.com/about/"><img src="./Project Fi_files/fi_logo.svg"></a></div>
+        <a class="tab" href="https://fi.google.com/signup"><paper-button class="invite x-scope paper-button-0" role="button" tabindex="0" animated="" aria-disabled="false" elevation="0">Join Fi</paper-button></a>
+      </app-toolbar>
+    </div>
+  </div> <!-- wrap -->
+</header>
+
+<div class="wrap">
+  <!-- ngIf: rc -->
+</div>
+
+<div class="wrap">
+  <div class="content">
+<section class="hero center">
+    <div class="row">
+        <div class="content">
+            <h1>Meet Project Fi,<br class="mobile-hide"> a wireless service from Google</h1>
+            <p>All your calls, texts, and data on one simple plan</p>
+            <link href="https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i"rel=stylesheet>
+            <style>
+            .gfont {
+              font-family: 'Product Sans', Arial, sans-serif;
+            }
+            .offer{
+              -webkit-transition-duration: .5s;
+                transition-duration: .5s;
+            }
+            .offer:hover{
+              color:#F0B21C;
+            }
+            </style>
+            <a href="https://g.co/fi/r/5K3843"><h1 class="gfont offer"> Exclusive Offer</h1></a>
+
+        </div>
+            <img class="hero-mobile-hide" src="./Project Fi_files/hero.svg" data-parallax=".hero .row" data-parallax-amount="100" data-parallax-inverse="true" data-parallax-transition="0" style="transform: translate(-50%, 0px) translateY(25px) translateZ(1px); will-change: transform; transition: transform 0s ease-out;">
+            <img class="hero-hidden hero-mobile-show" src="./Project Fi_files/hero_mobile.svg">
+
+    </div>
+    <div class="small-triangle"></div>
+</section>
+
+
+<div class="main-content">
+    <section class="multiple-network">
+    <div class="row half">
+        <div class="col">
+            <div class="container text-left">
+            <h2>A simple plan designed for you</h2>
+            <p>Get credited for data you don’t use, and pay the same $10/GB if you use more with no penalties — ever.</p>
+            <a href="https://fi.google.com/about/plan/">
+                <paper-button class="arrowed inline border x-scope paper-button-0" ng-click="" role="button" tabindex="0" animated="" aria-disabled="false" elevation="0">
+                    See the plan
+                    <iron-icon class="arrow-icon  right x-scope iron-icon-1" icon="arrow-forward"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" class="style-scope iron-icon"></path></g></svg></iron-icon>
+                </paper-button>
+            </a>
+            </div>
+        </div>
+        <div class="col media">
+            <img src="./Project Fi_files/fi_documents.svg" alt="A simple plan designed for you">
+            <div class="small-triangle"></div>
+        </div>
+    </div>
+</section>
+
+    <section class="simple-plan">
+    <div class="row half color green">
+        <div class="col">
+            <div class="container text-left">
+                <h2>Our phones and our service were made for each other</h2>
+                <p>The Pixel, Nexus 6P, and Nexus 5X can seamlessly shift between carriers, thanks to a state-of-the-art radio built to work with multiple networks.</p>
+                <a href="https://fi.google.com/about/phones/">
+                  <paper-button class="arrowed inline border x-scope paper-button-0" ng-click="" role="button" tabindex="0" animated="" aria-disabled="false" elevation="0">
+                      See available phones
+                      <iron-icon class="arrow-icon  right x-scope iron-icon-1" icon="arrow-forward"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" class="style-scope iron-icon"></path></g></svg></iron-icon>
+                  </paper-button>
+                </a>
+            </div>
+        </div>
+        <div class="col media parallax">
+          <img class="mobile-hide" src="./Project Fi_files/marlin_phone.jpg" data-parallax=".simple-plan" data-parallax-amount="100" style="transform: translate(-50%, 0px) translateY(100px) translateZ(1px); will-change: transform; transition: transform 0.3s ease-out;">
+            <img class="mobile-hide" src="./Project Fi_files/lines_bg.svg" data-parallax=".simple-plan" data-parallax-amount="300" style="transform: translate(-50%, 0px) translateY(300px) translateZ(1px); will-change: transform; transition: transform 0.3s ease-out;">
+            <img class="mobile-hide" src="./Project Fi_files/lines_fg.svg" data-parallax=".simple-plan" data-parallax-amount="200" style="transform: translate(-50%, 0px) translateY(200px) translateZ(1px); will-change: transform; transition: transform 0.3s ease-out;">
+            <img class="hidden mobile-show" src="./Project Fi_files/phone.jpg">
+            <div class="small-triangle"></div>
+        </div>
+    </div>
+</section>
+
+    <section class="international">
+    <div class="row half color green last">
+        <div class="col last">
+            <div class="container text-left">
+                <h2>Our network of networks keeps you connected</h2>
+                <p>Your Fi phone automatically finds you the best signal by seamlessly switching between Wi-Fi and Project Fi’s 4G LTE partner networks.</p>
+                <a href="https://fi.google.com/about/plan/">
+                  <paper-button class="arrowed inline border x-scope paper-button-0" ng-click="" role="button" tabindex="0" animated="" aria-disabled="false" elevation="0">
+                      Explore our coverage
+                      <iron-icon class="arrow-icon  right x-scope iron-icon-1" icon="arrow-forward"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" class="style-scope iron-icon"></path></g></svg></iron-icon>
+                  </paper-button>
+                </a>
+            </div>
+        </div>
+        <div class="col media parallax">
+          <img class="mobile-hide" src="./Project Fi_files/networks.svg" data-parallax=".international" data-parallax-amount="100" data-parallax-centered-y="" style="transform: translate(-50%, 50%) translateY(100px) translateZ(1px); bottom: 50%; will-change: transform; transition: transform 0.3s ease-out;">
+            <img class="hidden mobile-show" src="./Project Fi_files/networks.svg">
+            <div class="small-triangle right"></div>
+        </div>
+    </div>
+</section>
+
+    <section class="phones">
+    <div class="row half">
+        <div class="col">
+            <div class="container text-left">
+                <h2>Your plan travels as freely as you do.</h2>
+                <p>When you travel abroad, you’ll enjoy high-speed data at the same $10/GB rate you pay at home. Plus, you get affordable voice calls and free texting — all with no extra fees.</p>
+                <a href="https://fi.google.com/about/plan/#works-internationally">
+                  <paper-button class="arrowed inline border x-scope paper-button-0" ng-click="" role="button" tabindex="0" animated="" aria-disabled="false" elevation="0">
+                      See international details
+                      <iron-icon class="arrow-icon  right x-scope iron-icon-1" icon="arrow-forward"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" class="style-scope iron-icon"></path></g></svg></iron-icon>
+                  </paper-button>
+                </a>
+            </div>
+        </div>
+        <div class="col media parallax">
+          <img class="mobile-hide" src="./Project Fi_files/international_icon.svg" data-parallax=".phones" data-parallax-amount="300" style="transform: translate(-50%, 0px) translateY(300px) translateZ(1px); will-change: transform; transition: transform 0.3s ease-out;">
+            <img class="mobile-hide" src="./Project Fi_files/international_bg.svg" data-parallax=".phones" data-parallax-amount="600" style="transform: translate(-50%, 0px) translateY(600px) translateZ(1px); will-change: transform; transition: transform 0.3s ease-out;">
+            <img class="mobile-hide" src="./Project Fi_files/international_fg.svg" data-parallax=".phones" data-parallax-amount="1200" style="transform: translate(-50%, 0px) translateY(1200px) translateZ(1px); will-change: transform; transition: transform 0.3s ease-out;">
+            <img class="hidden mobile-show" src="./Project Fi_files/international.svg">
+            <div class="small-triangle"></div>
+        </div>
+    </div>
+</section>
+
+</div>
+<hr>
+
+  <section class="next-nav">
+    <div class="container">
+        <div class="link">
+          <a href="https://fi.google.com/about/plan/">
+            <paper-button class="arrowed inline next-icon x-scope paper-button-1" noink="" role="button" tabindex="0" animated="" aria-disabled="false" elevation="0">
+              Next:<br class="hidden mobile-show"> See Plans and Pricing
+              <iron-icon icon="arrow-forward" class="x-scope iron-icon-1"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope iron-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope iron-icon"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" class="style-scope iron-icon"></path></g></svg></iron-icon>
+            </paper-button>
+        </a></div>
+    </div>
+  </section>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="hidden mobile-show">
+        <div class="row">
+          <div class="six columns block">
+            <div class="footer__subscribe">
+              <div class="footer__subscribe__title">Let’s keep in touch</div>
+              <div class="footer__subscribe__body">Stay updated on our new plans, phones, service areas, and more</div>
+              <div class="footer__subscribe__cta">
+                <a href="https://fi.google.com/subscribe?sl=tnt&amp;autosub=">
+                <paper-button role="button" tabindex="0" animated="" aria-disabled="false" elevation="0" class="x-scope paper-button-0">Subscribe</paper-button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="logo"><img src="./Project Fi_files/googlelogo_light_clr_92x36px.svg"></div>
+      <div class="row">
+        <div class="two columns block">
+          <div class="title">Learn about Project Fi</div>
+          <ul>
+            <li><a href="https://fi.google.com/about/coverage/#network-of-networks">Our network of networks</a>
+            </li><li><a href="https://fi.google.com/about/coverage/#coverage-map">Explore coverage map</a>
+            </li><li><a href="https://fi.google.com/about/plan/#add-data">Get credit for unused data</a>
+            </li><li><a href="https://fi.google.com/about/plan/#works-internationally">International plan benefits</a>
+          </li></ul>
+        </div>
+        <div class="two columns block">
+          <div class="title">FAQ</div>
+          <ul>
+            <li><a data-accordion-id="top-faq" href="https://fi.google.com/about/faq/#top-faq">Most asked questions</a>
+            </li><li><a data-accordion-id="network-and-coverage" href="https://fi.google.com/about/faq/#network-and-coverage">Network and coverage</a>
+            </li><li><a data-accordion-id="plan-and-pricing" href="https://fi.google.com/about/faq/#plan-and-pricing">Plan and pricing</a>
+            </li><li><a data-accordion-id="switching-to-project-fi" href="https://fi.google.com/about/faq/#switching-to-project-fi">Switching to Project Fi</a>
+          </li></ul>
+        </div>
+        <div class="two columns block">
+          <div class="title">Legal</div>
+          <ul>
+            <li><a href="https://fi.google.com/about/tos/#project-fi-privacy-notice">Privacy</a>
+            </li><li><a href="https://fi.google.com/about/tos/">Terms of Service</a>
+            </li><li><a href="https://fi.google.com/about/device-tos/">Device Plan Terms</a>
+            </li><li><a href="https://support.google.com/fi/answer/6343762?visit_id=1-636112914168303646-55005193&amp;p=mobile_broadband_consumer_disclosure&amp;rd=1">Broadband Disclosure</a>
+          </li></ul>
+        </div>
+        <div class="six columns block mobile-hide">
+          <div class="footer__subscribe">
+            <div class="footer__subscribe__title">Let’s keep in touch</div>
+            <div class="footer__subscribe__body">Stay updated on our new plans, phones, service areas, and more</div>
+            <div class="footer__subscribe__cta">
+              <a href="https://fi.google.com/subscribe?sl=tnt&amp;autosub=true">
+              <paper-button role="button" tabindex="0" animated="" aria-disabled="false" elevation="0" class="x-scope paper-button-0">Subscribe</paper-button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="columns page-links">
+          <a class="tab" href="https://fi.google.com/about/">
+Home          </a>
+          <div class="separator">|</div>
+          <a class="tab" href="https://fi.google.com/about/plan/">
+Plans          </a>
+          <div class="separator">|</div>
+          <a class="tab" href="https://fi.google.com/about/phones/">
+Phones          </a>
+          <div class="separator">|</div>
+          <a class="tab" href="https://fi.google.com/about/coverage/">
+Coverage          </a>
+          <div class="separator">|</div>
+          <a class="tab" href="https://fi.google.com/about/faq/">
+FAQ          </a>
+          <div class="separator">|</div>
+          <a class="tab" href="https://fi.google.com/about/quiz/">
+Fi Fit Quiz          </a>
+          <div class="separator">|</div>
+        </div>
+        <div class="columns copyright">
+          <p>Copyright © <script>document.write(new Date().getFullYear());</script>2017 Google Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<app-drawer id="mobile-lateral-menu" class="drawer hidden mobile-show x-scope app-drawer-0" style="transition-duration: 200ms; touch-action: pan-y;" position="left"><div id="scrim" class="style-scope app-drawer" style="transition-duration: 200ms;"></div><div id="contentContainer" class="style-scope app-drawer" style="transition-duration: 200ms;">
+  <paper-toolbar role="toolbar" class="x-scope paper-toolbar-0"><div id="topBar" class="toolbar-tools  style-scope paper-toolbar"><a href="https://fi.google.com/about/"><img src="./Project Fi_files/fi_logo.svg"></a></div><div id="middleBar" class="toolbar-tools  style-scope paper-toolbar"></div><div id="bottomBar" class="toolbar-tools  style-scope paper-toolbar"></div></paper-toolbar>
+  <paper-listbox selected="-1" role="listbox" tabindex="0" class="x-scope paper-listbox-0">
+    <paper-item role="option" tabindex="-1" aria-disabled="false" class="x-scope paper-item-0"><a href="https://fi.google.com/about/plan/">Plans</a></paper-item>
+    <paper-item role="option" tabindex="-1" aria-disabled="false" class="x-scope paper-item-0"><a href="https://fi.google.com/about/phones/">Phones</a></paper-item>
+    <paper-item role="option" tabindex="-1" aria-disabled="false" class="x-scope paper-item-0"><a href="https://fi.google.com/about/coverage/">Coverage</a></paper-item>
+    <paper-item role="option" tabindex="-1" aria-disabled="false" class="x-scope paper-item-0"><a href="https://fi.google.com/about/faq/">FAQ</a></paper-item>
+    <paper-item role="option" tabindex="-1" aria-disabled="false" class="x-scope paper-item-0"><a href="https://fi.google.com/about/quiz/">Fi Fit Quiz</a></paper-item>
+    <div class="separator" tabindex="-1"></div>
+    <paper-item role="option" tabindex="-1" aria-disabled="false" class="x-scope paper-item-0"><a href="https://fi.google.com/signup">Join Fi</a></paper-item>
+    <div class="separator" tabindex="-1"></div>
+    <paper-item role="option" tabindex="-1" aria-disabled="false" class="x-scope paper-item-0"><a href="https://fi.google.com/account">Sign in to Account</a></paper-item>
+  </paper-listbox>
+</div></app-drawer>
+
+<script type="text/javascript" src="./Project Fi_files/js"></script>
